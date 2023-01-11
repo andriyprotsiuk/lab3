@@ -1,0 +1,16 @@
+#include <math.h>
+#include <conio.h>
+#include <iostream>
+using namespace std;
+main()
+{
+    float a(10.5), x(-1);
+    float y;
+    do
+    {
+        y = a * pow(x, 2) - sin(x);
+        cout << "х= " << x << " у= " << y << endl ;
+        x += 0.5;
+    } while (x <= 2);
+    getch();     //задержка экрана
+}
